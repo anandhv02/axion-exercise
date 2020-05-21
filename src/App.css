@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{max-width: 100%;vertical-align: top}
+.App {
+  text-align: center;
+  background: #ace2ea;
+}
+h1{
+  padding: 10px 0;
+}
+.data-list table{
+  width:90%;
+  transition: all 0.5s ease-in-out;
+  border: 4px solid transparent;
+  border-image: linear-gradient(30deg, #d367c1 10%, #dedf40 25%, #62cb5c 50%, #00bbcb 75%, #ab79d6 90%);
+  -webkit-border-image: -webkit-linear-gradient(30deg, #d367c1 10%, #dedf40 25%, #62cb5c 50%, #00bbcb 75%, #ab79d6 90%);
+  border-image-slice: 1;
+  border-collapse: collapse;
+  background: #212125;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  margin: auto;
+}
+
+.data-list table td,.data-list table th{
+  border: 1px solid #cccccc;
+  padding:  10px 0;
+  color: #fff;
+}
+.icons{
+  text-align: right;
+  padding: 10px 0;
+}
+.icons span{
+  display: inline-block;
+  max-width: 40px;
+  margin-right: 20px;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.icons span.active{background: #fff;}
+
+.card{display:inline-block;margin:20px; border: 1px solid #cccccc;color: #000000;max-width: 200px;border-radius: 10px;padding: 20px;}
+
+.grid .card {
+  max-width: 420px;
+  height: 420px;
+  padding: 2rem;
+  transform: skewY(-2deg);
+  border-radius: 4px;
+  background: #212125;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+  color: #fff;
+  display: flex;
+  position: relative;
+  flex-direction: colunm;
+  transition: all 0.5s ease-in-out;
+  border: 4px solid transparent;
+  border-image: linear-gradient(30deg, #d367c1 10%, #dedf40 25%, #62cb5c 50%, #00bbcb 75%, #ab79d6 90%);
+  -webkit-border-image: -webkit-linear-gradient(30deg, #d367c1 10%,   #dedf40 25%, #62cb5c 50%, #00bbcb 75%, #ab79d6 90%);
+  border-image-slice: 1;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.grid .card .content {
+  transform: skewY(2deg);
+  margin: 30px auto 0 auto;
+}
+
+.grid .card .content p {
+  font-size: 20px;
+}
+
+.grid .card .content * {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+
